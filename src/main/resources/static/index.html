@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food Ordering System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>QuickBite</h1><p>Online Food Ordering</p></header>
+
+<main>
+<section>
+    <div class="toolbar">
+        <input id="search" placeholder="Search food...">
+        <select id="category">
+            <option value="">All Categories</option>
+            <option>Biryani</option><option>Rolls</option><option>Burgers</option><option>Beverages</option>
+        </select>
+    </div>
+    <div id="foods" class="grid"></div>
+</section>
+
+<aside>
+    <h2>Account</h2>
+    <input id="loginEmail" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+    <button id="loginButton">Login</button>
+    <p id="loginStatus"></p>
+    <small>Demo login: user@example.com / 123456</small>
+
+    <h2>Your Cart</h2>
+    <div id="cart"></div>
+    <h3>Total: ₹<span id="total">0.00</span></h3>
+    <input id="customerName" placeholder="Your name">
+    <input id="customerEmail" placeholder="Email">
+    <button id="placeOrder">Place Order</button>
+</aside>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f6f7f9;color:#222}
+header{background:#171717;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center}
+main{width:86%;margin:30px auto;display:grid;grid-template-columns:2fr 1fr;gap:25px}
+.toolbar{display:flex;gap:10px;margin-bottom:20px}
+input,select,button{padding:11px;border:1px solid #ccc;border-radius:6px;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.food,aside{background:white;padding:18px;border-radius:10px;box-shadow:0 2px 8px #0001}
+.food h3{margin-top:0}
+.food button, #placeOrder{background:#171717;color:white;cursor:pointer;width:100%}
+aside{height:max-content}
+.cart-item{border-bottom:1px solid #eee;padding:10px 0}
+#customerName,#customerEmail{width:100%;margin-bottom:10px}
+@media(max-width:900px){main{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}
